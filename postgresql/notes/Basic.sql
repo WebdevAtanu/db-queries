@@ -23,3 +23,8 @@ SELECT * FROM person; -- retrieve all records from the 'person' table
 SELECT name FROM person WHERE city = 'New York'; -- retrieve the names of people who live in New York
 UPDATE person SET city = 'San Francisco' WHERE name = 'Alice'; -- update the city for the person named 'Alice' to 'San Francisco'
 DELETE FROM person WHERE id = 2; -- delete the record of the person with id 2 from the 'person' table
+
+ALTER TABLE person ADD COLUMN age INT; -- add a new column named 'age' of type integer to the 'person' table
+ALTER TABLE person DROP COLUMN age; -- remove the 'age' column from the 'person' table
+ALTER TABLE person RENAME TO individual; -- rename the 'person' table to 'individual'
+ALTER TABLE person RENAME COLUMN name TO full_name; -- rename the 'name' column to 'full_name' in the 'person' table
