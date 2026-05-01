@@ -28,6 +28,7 @@ CREATE Table customer (
 INSERT INTO customer (first_name, last_name, email, phone)
 VALUES ("John", "Doe", "l4V2r@example.com", "1234567890");
 SELECT * FROM customer;
+SELECT DISTINCT country FROM customer;
 ALTER Table customer 
 ADD COLUMN address VARCHAR(255); -- add column to table
 ALTER Table customer 
