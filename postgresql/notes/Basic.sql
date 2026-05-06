@@ -28,3 +28,10 @@ ALTER TABLE person ADD COLUMN age INT; -- add a new column named 'age' of type i
 ALTER TABLE person DROP COLUMN age; -- remove the 'age' column from the 'person' table
 ALTER TABLE person RENAME TO individual; -- rename the 'person' table to 'individual'
 ALTER TABLE person RENAME COLUMN name TO full_name; -- rename the 'name' column to 'full_name' in the 'person' table
+
+-- create a new table named 'branch' with two columns: branch_id and employee_id where the employee_id column is a foreign key that references the id column in the employee table
+CREATE TABLE branch(
+    branch_id int,
+    employee_id int,
+    FOREIGN KEY (employee_id) REFERENCES employee (id)
+)
