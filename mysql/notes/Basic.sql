@@ -33,3 +33,4 @@ ADD COLUMN address VARCHAR(255); -- add column to table
 ALTER Table customer 
 DROP COLUMN address; -- drop column from table
 TRUNCATE TABLE customer; -- delete all data from table
+

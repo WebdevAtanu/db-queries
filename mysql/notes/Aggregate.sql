@@ -1,4 +1,3 @@
--- Active: 1777266959161@@127.0.0.1@3306@test_db
 SELECT COUNT(*) FROM customer; -- count the number of rows
 SELECT COUNT(DISTINCT country) FROM customer; -- count the number of unique values
 SELECT COUNT(*) as customers, country FROM customer GROUP BY country; -- count the number of unique values in each group by country

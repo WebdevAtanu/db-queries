@@ -1,4 +1,3 @@
--- Active: 1777266959161@@127.0.0.1@3306@test_db
 SELECT CURDATE() -- current date
 
 SELECT CURTIME() -- current time
